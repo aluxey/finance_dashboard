@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../style/listLinks.css';
 import '../style/table.css';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+
+const CustomButton = styled(Button)(({ theme }) => ({
+    padding: '10px',
+    textAlign: 'center',
+    marginRight: '25px',
+    border: 'none',
+    borderRadius: '4px',
+}));
 
 const Transactions = () => {
     const location = useLocation();
@@ -34,12 +46,26 @@ const Transactions = () => {
             </div>
             <div className='tableTransaction'>
                 <table>
+                    <thead>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                    </thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Title</th>
-                        <th>Amount</th>
-                        <th>Category</th>
-                        <th>Actions</th>
+                        <td>21/05/2024</td>
+                        <td>Course Leclerc</td>
+                        <td>19.56 €</td>
+                        <td>Living</td>
+                        <td>
+                            <CustomButton variant="contained" color="primary" startIcon={<EditIcon/>}>
+                                Edit
+                            </CustomButton>
+                            <CustomButton variant="contained" color="secondary" startIcon={<DeleteIcon/>}>
+                                Delete
+                            </CustomButton>
+                        </td>
                     </tr>
                     <tr>
                         <td>21/05/2024</td>
@@ -47,18 +73,12 @@ const Transactions = () => {
                         <td>19.56 €</td>
                         <td>Living</td>
                         <td>
-                            <button className='edit' type="button" onClick="">Edit</button>
-                            <button className='delete' type="button" onClick="">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>17/05/2024</td>
-                        <td>Achat vetement ASOS</td>
-                        <td>64.99 €</td>
-                        <td>Entertainement</td>
-                        <td>
-                            <button className='edit' type="button" onClick="">Edit</button>
-                            <button className='delete' type="button" onClick="">Delete</button>
+                            <CustomButton variant="contained" color="primary" startIcon={<EditIcon/>}>
+                                Edit
+                            </CustomButton>
+                            <CustomButton variant="contained" color="secondary" startIcon={<DeleteIcon/>}>
+                                Delete
+                            </CustomButton>
                         </td>
                     </tr>
                 </table>
@@ -68,5 +88,3 @@ const Transactions = () => {
 };
 
 export default Transactions;
-
-
