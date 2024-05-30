@@ -1,0 +1,57 @@
+.recap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: solid black;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    background-color: #007bff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.title-container {
+    margin-right: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.date-container {
+    font-size: 14px;
+    color: white;
+}
+
+.img-container {
+    width: 7vw;
+    height: 7vw;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.container-content {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.total {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.evolution {
+    font-size: 16px;
+    color: green;
+}

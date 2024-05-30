@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+

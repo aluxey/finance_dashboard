@@ -1,0 +1,38 @@
+.listLinks  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to arrange items horizontally */
+}
+
+.listLinks  ul li {
+    margin: 15px;
+}
+
+.listLinks  ul li a {
+    text-decoration: none;
+    color: #858585;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.listLinks  ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.listLinks  ul li a.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+.listLinks ul li.active a {
+    background-color: #007bff; /* Background color for active link */
+    color: #fff; /* Text color for active link */
+    border-radius: 5px; /* Optional: rounded corners for active link */
+}
