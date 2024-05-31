@@ -1,0 +1,17 @@
+.settings {
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+}
+
+.settings h1 {
+    margin-bottom: 1rem;
+}
+
+.settings p {
+    margin: 0.5rem 0;
+}
